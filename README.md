@@ -29,48 +29,7 @@ After each prompt is answers, a professional README file is generated with:
 * Node.js
 * 
 
-A weather dashboard with form inputs is presented
-
-When a city is searched for, current and future weather conditions for that city is presented
-
-
-The current weather conditions presented includes:
-- city name
-- current date
-- an icon representation of weather conditions
-- temperature
-- humidity
-- wind speed
-
-
-The future weather conditions displays as a 5-day forcast that includes:
-- the date
-- an icon representation of weather conditions
-- temperature
-- humidity
-- wind speed
-
-
-When a city is searched for, it is added to the search history
-
-
-When a city is clicked on within the search history, current and future weather conditions are again presented for that city
-
-* **The following image shows a demonstration of my web applications appearance and functionality:**
-
-![applicaiton demo.](./Assets/ScreenshotOfApp.png)
-
-
-## Technologies Used
-
-* HTML
-* CSS
-* JavaScript
-* Day.js JavaScript library
-* Bootstrap
-* OpenWeather API's
-
 ## Credits
 
-* Project assignment provided by edX Boot Camps LLC
-* Code written by Conner Martin
+* Starter code provided by edX Boot Camps LLC
+* Code updated by Conner Martin
