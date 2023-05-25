@@ -27,7 +27,6 @@ After each prompt is answers, a professional README file is generated with:
 
 * JavaScript
 * Node.js
-* 
 
 ## Credits
 

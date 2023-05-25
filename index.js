@@ -7,55 +7,56 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     {
         type: 'input',
-        message: 'What is the title of your project?',
+        message: 'Enter the title of your project:',
         name: 'title',
     },
     {
         type: 'input',
-        message: 'What is the description of your project?',
+        message: 'Enter the description of your project:',
         name: 'description',
     },
     {
         type: 'input',
-        message: 'What are the installation instructions to use your project?',
+        message: 'Enter the installation instructions for your project:',
         name: 'installation',
     },
     {
         type: 'input',
-        message: 'What usage information do you need?',
+        message: 'Enter any usage information for your project:',
         name: 'usage',
     },
     {
         type: 'input',
-        message: 'What are the contribution guidelines for your project?',
+        message: 'Enter the contribution guidelines for your project:',
         name: 'contribution',
     },
     {
         type: 'input',
-        message: 'What are the test instructions to test your project?',
+        message: 'Enter any test instructions for your project:',
         name: 'tests',
     },
     {
         type: 'list',
-        message: 'What license are you using?',
+        message: 'Enter the license you are using for your project:',
         choices: ['No License', 'MIT', 'Apache 2.0', 'Boost Software 1.0', 'BSD 3-Clause', 'BSD 2-Clause', 'Perl'],
         name: 'license',
     },
     {
         type: 'input',
-        message: 'What would you like to name this file?',
+        message: 'Enter the name of your .md file:',
         name: 'name',
     },
     {
         type: 'input',
-        message: 'What is your Github username?',
-        name: 'github',
+        message: 'Enter your email address:',
+        name: 'email',
     },
     {
         type: 'input',
-        message: 'What is your email address?',
-        name: 'email',
-    }
+        message: 'Enter your github username:',
+        name: 'github',
+    },
+
 ];
 
 function promptUser() {
@@ -69,7 +70,7 @@ function promptUser() {
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.appendFile(`${fileName}.md`, data, err => {
-        err ? console.error(err) : console.log('Success!')
+        err ? console.error(err) : console.log('README file created!')
     });
  }
 
