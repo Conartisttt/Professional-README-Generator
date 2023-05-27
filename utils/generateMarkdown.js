@@ -1,41 +1,27 @@
+const licenses = ["Apache 2.0", "MIT", "Boost Software 1.0", "BSD 3-Clause", "BSD 2-Clause", "Pearl"];
+const licenseBadges = ["![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)", "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)", "![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)", "![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)", "![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)", "![License](https://img.shields.io/badge/License-Perl-0298c3.svg)"]
+const licenseLinks = ["[License](https://opensource.org/licenses/Apache-2.0)", "[License: MIT](https://opensource.org/licenses/MIT)", "[License](https://www.boost.org/LICENSE_1_0.txt)", "[License](https://opensource.org/licenses/BSD-3-Clause)", "[License](https://opensource.org/licenses/BSD-2-Clause)", "[License](https://opensource.org/licenses/Artistic-2.0)"]
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === "Apache 2.0") {
-    return "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)";
-  } else if (license === "MIT") {
-    return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-  } else if (license === "Boost Software 1.0") {
-    return "![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)";
-  } else if (license === "BSD 3-Clause") {
-    return "![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)";
-  } else if (license === "BSD 2-Clause") {
-    return "![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)";
-  } else if (license === "Pearl") {
-    return "![License](https://img.shields.io/badge/License-Perl-0298c3.svg)";
-  } else {
-    return "";
+  for (let i = 0; i < licenses.length; i++) {
+    if (license === licenses[i]) {
+      return licenseBadges[i];
+    }
   }
+  return "";
 }
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license === "Apache 2.0") {
-    return "[License](https://opensource.org/licenses/Apache-2.0)";
-  } else if (license === "MIT") {
-    return "[License: MIT](https://opensource.org/licenses/MIT)";
-  } else if (license === "Boost Software 1.0") {
-    return "[License](https://www.boost.org/LICENSE_1_0.txt)";
-  } else if (license === "BSD 3-Clause") {
-    return "[License](https://opensource.org/licenses/BSD-3-Clause)";
-  } else if (license === "BSD 2-Clause") {
-    return "[License](https://opensource.org/licenses/BSD-2-Clause)";
-  } else if (license === "Pearl") {
-    return "[License](https://opensource.org/licenses/Artistic-2.0)";
-  } else {
-    return "";
+  for (let i = 0; i < licenses.length; i++) {
+    if (license === licenses[i]) {
+      return licenseLinks[i];
+    }
   }
+  return "";
 }
 
 // TODO: Create a function that returns the license section of README
@@ -44,7 +30,7 @@ function renderLicenseSection(license) {
   if (renderLicenseLink(license) === "") {
     return "";
   } else {
-    return ` ## License\n
+    return ` ## License
   See more information about the license here: ${renderLicenseLink(license)}
   `
   }
