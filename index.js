@@ -1,3 +1,9 @@
+//TODO: Add default answers
+//what command sould be run to install dependencies
+//what command should be run to run tests
+//how to use: clone it and run it
+//how to add to contribute
+
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
