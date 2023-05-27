@@ -7,6 +7,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const validator = require("email-validator");
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
@@ -63,7 +64,7 @@ const questions = [
         type: 'input',
         message: 'Enter your email address:',
         name: 'email',
-        validate: (answer) => !answer ? "You must provide an email address" : true
+        validate: (answer) => !validator.validate(answer) ? "You must provide a valid email address" : true
     },
     {
         type: 'input',
@@ -87,7 +88,7 @@ function writeToFile(fileName, data) {
     fs.appendFile(`${fileName}.md`, data, err => {
         err ? console.error(err) : console.log('README file created!')
     });
- }
+}
 
 // TODO: Create a function to initialize app
 function init() {
