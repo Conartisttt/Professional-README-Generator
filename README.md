@@ -24,14 +24,17 @@ After each prompt is answers, a professional README file is generated with:
 <br>
 Initiate the Application  
 <br>
+
 ![applicaiton demo.](./assets/initiate.png)  
 <br>
 Answer Prompts in Command Line  
 <br>
+
 ![applicaiton demo.](./assets/prompt.png)  
 <br>
 Professional .md file generated based on input!  
 <br>
+
 ![applicaiton demo.](./assets/newfile.png)  
 <br>
 
