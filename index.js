@@ -1,16 +1,11 @@
-//TODO: Add default answers
-//what command sould be run to install dependencies
-//what command should be run to run tests
-//how to use: clone it and run it
-//how to add to contribute
 
-// TODO: Include packages needed for this application
+//packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 const validator = require("email-validator");
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+//array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -75,6 +70,7 @@ const questions = [
 
 ];
 
+//prompt user
 function promptUser() {
     inquirer
         .prompt(questions)
@@ -83,17 +79,17 @@ function promptUser() {
         })
 }
 
-// TODO: Create a function to write README file
+//write to file
 function writeToFile(fileName, data) {
     fs.appendFile(`${fileName}.md`, data, err => {
-        err ? console.error(err) : console.log('README file created!')
+        err ? console.error(err) : console.log(`${fileName}.md created!`)
     });
 }
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
     promptUser();
 }
 
-// Function call to initialize app
+// function call to initialize app
 init();
