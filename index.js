@@ -83,17 +83,17 @@ function promptUser() {
         })
 }
 
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(fileName, data) {
     fs.appendFile(`${fileName}.md`, data, err => {
         err ? console.error(err) : console.log('README file created!')
     });
 }
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
     promptUser();
 }
 
-// Function call to initialize app
+// function call to initialize app
 init();
