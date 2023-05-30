@@ -82,7 +82,7 @@ function promptUser() {
 //write to file
 function writeToFile(fileName, data) {
     fs.appendFile(`${fileName}.md`, data, err => {
-        err ? console.error(err) : console.log('README file created!')
+        err ? console.error(err) : console.log(`${fileName}.md created!`)
     });
 }
 
