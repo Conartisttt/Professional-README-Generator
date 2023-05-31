@@ -8,7 +8,7 @@ The purpose of this application is to allow users to generate a high-quality REA
 
 ## Features
 
-When the program is run, using command node index.js, the user is prompted for information about their repository.
+When the program is run, the user is prompted for information about their repository.
 After each prompt is answers, a professional README file is generated with:
 - title
 - description
@@ -20,22 +20,30 @@ After each prompt is answers, a professional README file is generated with:
 - test instructions
 - question resources
 
+## Usuage
+
+To use this application, clone it.
+Be sure to have NodeJS and NPM.  
+You must first download the node packages you need using command ```npm install```  
+Then, run the application using command ```node index.js```
+Answer the prompts in the terminal and a professional .md file will generate.
+
 * **The following images show a demonstration of my web applications appearance and functionality:**  
 <br>
 Initiate the Application  
 <br>
 
-![applicaiton demo.](./assets/initiate.png)  
+![applicaiton demo.](./assets/images/initiate.png)  
 <br>
 Answer Prompts in Command Line  
 <br>
 
-![applicaiton demo.](./assets/prompt.png)  
+![applicaiton demo.](./assets/images/prompt.png)  
 <br>
 Professional .md file generated based on input!  
 <br>
 
-![applicaiton demo.](./assets/newfile.png)  
+![applicaiton demo.](./assets/images/newfile.png)  
 <br>
 
 ## Technologies Used
