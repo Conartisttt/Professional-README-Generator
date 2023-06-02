@@ -47,6 +47,7 @@ ${data.description}
 - [Usage Information](#usage)
 - [Contribution Guidelines](#contributing)
 - [Test Instructions](#tests)
+- [Questions](#questions)
 
 ## Installation
 ${data.installation}
