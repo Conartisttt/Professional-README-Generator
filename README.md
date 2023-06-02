@@ -4,7 +4,7 @@
 
 The purpose of this application is to allow users to generate a high-quality README file for their applications on the command-line. This will enable project creators to devote more time to working on their project.
 
-* **Demonstration of Application:** [Application Walkthrough](insert video link here)
+* **Demonstration of Application:** [Application Walkthrough](https://drive.google.com/file/d/1Bl4UaX2atWxiDM-JA99OhBinsbK3OLxB/view)
 
 ## Features
 
